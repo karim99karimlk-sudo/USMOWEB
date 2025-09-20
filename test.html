@@ -3,124 +3,65 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Responsive Hero — FC Bayern</title>
+  <title>USMO</title>
   <style>
-    :root{
-      --gap: 24px;
-      --black: #070707;
-      --overlay: rgba(0,0,0,0.45);
-      --label-size: 12px;
-      --max-width: 1400px;
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+
+.history-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+}
+
+.history{
+  background-color: black;
+  width: 70%;
+  position: relative;
+      overflow: hidden;
+  
+}
+.history img{
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+.history img:hover{
+    transform: scale(1.1);
+
+}
+.name {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      font-family:Arial;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
     }
-
-    /* page reset */
-    *{box-sizing:border-box}
-    body{margin:0;}
-
-    /* outer frame to mimic the black frame in your screenshot */
-    .frame{
-      padding:18px; /* thickness of outer black border */
-      background:#000;
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-
-    /* hero container */
-    .hero{
-      width:100%;
-      max-width:var(--max-width);
-      aspect-ratio: 16/9; /* keeps the photographic proportion on wide screens */
-      overflow:hidden;
-      position:relative;
-      border-radius:6px;
-      box-shadow: 0 2px 18px rgba(0,0,0,0.6);
-      background:#111;
-    }
-
-    /* the image -- cover behaviour */
-    .hero__img{
-      position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      object-position:center 35%; /* tweak focal point */
-      display:block;
-      /* slightly desaturate to get a cinematic look */
-      filter: saturate(0.95) contrast(1.02);
-    }
-
-    /* soft gradient overlay to improve text contrast */
-    .hero::before{
-      content:'';
-      position:absolute;inset:0;
-      background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.6) 100%);
-      pointer-events:none;
-    }
-
-    /* content placed at bottom-left */
-    .hero__content{
-      position:absolute;
-      left: clamp(20px, 3.5vw, 48px);
-      bottom: clamp(18px, 3.2vw, 36px);
-      color: white;
-      max-width: 66%;
-      z-index:3;
-      text-shadow: 0 6px 18px rgba(0,0,0,0.6);
-      display:flex;
-      flex-direction:column;
-      gap:8px;
-    }
-
-    .hero__label{
-      font-size:var(--label-size);
-      letter-spacing:1.6px;
-      text-transform:uppercase;
-      opacity:0.9;
-      font-weight:600;
-      color: #e9e9e9;
-      margin:0;
-    }
-
-    .hero__title{
-      margin:0;
-      font-weight:700;
-      line-height:1.08;
-      font-size: clamp(20px, 3.6vw, 44px);
-      letter-spacing:-0.02em;
-    }
-
-    /* make sure on small screens text fits and sits nicely */
-    @media (max-width:720px){
-      .hero{aspect-ratio: 4/3}
-      .hero__content{max-width:86%}
-      .hero__label{font-size:11px}
-      .hero__title{font-size: clamp(18px, 6vw, 28px)}
-    }
-
-    /* optional: stack label above title on tiny screens */
-    @media (max-width:400px){
-      .hero__content{left:16px;bottom:14px}
-      .hero__title{line-height:1.02}
-    }
-
   </style>
 </head>
-<body>
-  <div class="frame">
-    <section class="hero" role="img" aria-label="Historic team photo, FC Bayern">
-      <!-- replace the src path if you move the image. Your uploaded image path in this session is
-           /mnt/data/C3659507-99B7-4E4B-9092-FE4C258C8B4F.jpeg -->
-      <img class="hero__img" src="USMO IMG/USMO TEAM 1958.jpg" alt="Historic black-and-white photo of a football team with crowd in background">
+<body style="background-color: rgb(240, 240, 240);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;">
 
-      <div class="hero__content">
-        <p class="hero__label">Milestones</p>
-        <h1 class="hero__title">The historic development of FC Bayern</h1>
-      </div>
-    </section>
-  </div>
+  <header style="height: 100px;">
+    
+  </header>
+  <main style="width: 90%; background-color: white;">
+<div class="history-container">
+      <h2 style="color: white;">History</h2>
+
+  <a href="history.html" class="history">
+    <img src="USMO IMG/USMO TEAM 1958.jpg" alt="">
+     <span class="name">USMO History</span>
+  </a>
+</div>
+  </main>
+
+  <footer style="height: 100px;"></footer>
 </body>
 </html>

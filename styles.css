@@ -271,13 +271,63 @@
 
 /* FOOTER STYLES*/
 .footer {
-      background: linear-gradient(135deg, #6c6c6c, #000000);
-
+  background: linear-gradient(135deg, #6c6c6c, #000000);
   color: #fff;
   text-align: center;
   padding: 30px 20px;
   font-family: Arial, sans-serif;
 }
+
+ .players-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  padding: 20px;
+  font-family: 'Readex Pro', sans-serif;
+}
+
+.player-group {
+  margin: 10px;
+  min-width: 150px;
+}
+
+.player-group h4 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.player-group p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 3px 0;
+  line-height: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.player-group p:hover {
+  color: #f1c40f; /* highlight on hover */
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  /* Row 1: Attackers + Midfielders */
+  .player-group:nth-child(1),
+  .player-group:nth-child(2) {
+    flex: 1 1 50%;
+  }
+
+  /* Row 2: Defenders + Goalkeepers */
+  .player-group:nth-child(3),
+  .player-group:nth-child(4) {
+    flex: 1 1 50%;
+  }
+}
+
+   
+   
 
 .footer-logo img {
   width: 200px;
@@ -383,5 +433,8 @@
     .name { font-size: 18px; }
     
   }
+
+  
+  
 
  
