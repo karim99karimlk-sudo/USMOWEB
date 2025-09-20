@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="USMO IMG/cropped_circle_image.png">
+   <title>الفريق الأول النادي</title>
+  <link rel="stylesheet" href="team.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">USMO</a></div>
+
+  <!-- Hamburger (3 lines) -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Centered nav -->
+  <nav id="navMenu">
+    <a id="team" href="team.html">الفريق</a>
+    <a id="history" href="history.html">التاريخ</a>
+    <a id="standing" href="standing.html">الترتيب</a>
+    <a id="schedule" href="schedule.html">الجدول</a>
+  </nav>
+<div class="language-selector" id="langMenu">
+    <label for="lang"></label>
+    <select class="selector" id="lang" onchange="changeLang(this.value)">
+      <option value="en">العربية</option>
+      <option value="ar">English</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+  
+
+</header>
+<main>
+  <h1 style="text-align: center;
+  margin-top: 100px;">قريبا...</h1>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="USMO IMG/cropped_circle_image.png" alt="USMO Logo">
+  </div>
+
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/USMOUJDAFOOT" target="_blank">
+      <img src="USMO IMG/facebook-round-svgrepo-com.svg" alt="Facebook">
+    </a>
+    <a href="https://www.youtube.com/@usmotv48" target="_blank">
+      <img src="USMO IMG/youtube-svgrepo-com.svg" alt="Youtube">
+    </a>
+    <a href="https://www.instagram.com/usmoujda/" target="_blank">
+      <img src="USMO IMG/instagram-icon-svgrepo-com (2).svg" alt="Instagram">
+    </a>
+  </div>
+
+  <div class="footer-name">
+    <p>UNION SPORTIVE MUSULMANE OUJDA</p>
+  </div>
+    
+</footer>
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+    document.getElementById('langMenu').classList.toggle('show');
+    document.getElementById('hamburger').classList.toggle('active');
+  }
+</script>
+</body>
+</html>

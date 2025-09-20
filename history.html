@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="tab">تاريخ نادي الإتحاد الرياضي الإسلامي الوجدي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="USMO IMG/cropped_circle_image.png">
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Container */
+    body{
+       background-image: url(''); /* ضع رابط الصورة هنا */
+      background-size: cover; /* لتغطية كامل الصفحة */
+      background-position: center; /* وضع الصورة في المنتصف */
+      background-repeat: no-repeat;
+    }
+    .history-container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      font-family: 'Readex Pro', sans-serif;
+    }
+
+    /* Section title */
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #111;
+      border-bottom: 2px solid #111;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* Each history block */
+    .history-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* Reverse layout for alternating images */
+    .history-item.reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* Text styling */
+    .history-text {
+      flex: 1 1 400px;
+    }
+
+    /* Image styling */
+    .history-image {
+      flex: 1 1 300px;
+    }
+    .history-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    /* Headings inside history */
+    .history-text h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .history-text p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+
+    /* Mobile: stack text above image */
+    @media screen and (max-width: 768px) {
+      .history-item,
+      .history-item.reverse {
+        flex-direction: column;
+        text-align: center;
+      }
+      .history-image {
+        margin-top: 15px;
+      }
+      .history-text {
+        flex: 1 1 100%;
+      }
+    }
+
+    
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">USMO</a></div>
+
+  <!-- Hamburger (3 lines) -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Centered nav -->
+  <nav id="navMenu">
+    <a id="team" href="team.html">الفريق</a>
+    <a id="history" href="history.html">التاريخ</a>
+    <a id="standing" href="standing.html">الترتيب</a>
+    <a id="schedule" href="schedule.html">الجدول</a>
+  </nav>
+<div class="language-selector" id="langMenu">
+    <label for="lang"></label>
+    <select class="selector" id="lang">
+      <option value="en">العربية</option>
+      <option value="ar">English</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+  
+
+</header>
+<main>
+
+  <div class="history-container">
+    <h2 id="historyTitle" class="section-title"> تاريخ النادي</h2>
+
+
+    <div class="history-item">
+      <div class="history-text">
+        <h3 id="historyIntro">تقديم</h3>
+        <p id="para1">الإتحاد الرياضي الإسلامي الوجدي ، المعروف أيضًا ب"ليزمو"، هو أحد أعرق الأندية المغربية. تأسس سنة 1958 في قلب مدينة وجدة، المغرب. ألوان النادي هي الأسود والأبيض ، يُلقب الفريق بـ"لقلق الشرق" من قِبل جماهيره . يلعب الإتحاد حاليًا في دوري الدرجة الثانية المغربي للمحترفين BOTOLA PRO 2.</p>
+      </div>
+      <div class="history-image">
+        <img src="USMO IMG/USMO Black-white.logo.jpeg" alt="USMO Foundation">
+      </div>
+    </div>
+
+    <div class="history-item reverse">
+      <div class="history-text">
+        <h3 id="paraQ">كيف تم تأسيس النادي</h3>
+        <p id="para2">بدأت القصة عندما خطرت لثلاثة أصدقاء: عبد الرحمن بلعوشي، وبن يونس مزواري، وبومدين بتموشنت، فكرة إنشاء نادٍ بعد أن رأوا الطاقة اللامحدودة لشباب حيهم "شارع الدار البيضاء". وكان مقر النادي آنذاك في مقهى أولاد ميمون. في البداية جعلوا الحاج ميمون مومن رئيسا شرفيا بعد إقناعه، والمكي بوشعيب كشافا للمواهب، والحاج العربي بن لخضر الدرفوفي الملقب بـ"با عروب" مدربا و يعتبر أول مدرب للاتحاد.</p>
+     <p id="para3">
+      في البداية جعلوا الحاج ميمون مومن رئيسا شرفيا بعد إقناعه، والمكي بوشعيب كشافا للمواهب، والحاج العربي بن لخضر الدرفوفي الملقب بـ"با عروب" مدربا و يعتبر أول مدرب للاتحاد.
+    </p>
+      </div>
+      <figure class="history-image">
+        <img src="USMO IMG/USMO TEAM 1958.jpg" alt="USMO first team">
+        <figcaption id="img2Cap" style="text-align: center;
+        color:#4b4b4b;">أول فريق للنادي</figcaption>
+      </figure>
+    </div>
+
+    <div class="history-item">
+      <div class="history-text">
+        <h3 id="para4title">بدايات النادي</h3>
+        <p id="para4">في موسم 1962/63 تمكن نادي الاتحاد الرياضي الإسلامي الوجدي (USMO) من الصعود إلى القسم الثاني لأول مرة في تاريخه، وذلك بعد فوزه في المباراة الأخيرة على فريق خريبكة. وفي الموسم الموالي نزل الفريق مجددًا إلى القسم الثالث، لكنه لم يستسلم، حيث عمل اللاعبون بجد واتحدوا، ليحققوا موسمًا استثنائيًا لم يتعرضوا فيه لأي هزيمة، فعادوا مرة أخرى إلى القسم الثاني في موسم 1965/66.
+
+بعد سنتين، وتحديدًا في موسم 1968/69، كان الفريق قريبًا من تحقيق الصعود إلى القسم الوطني الأول، إذ أنهى منافسات القسم الثاني الشمالي في المركز الثاني برصيد 51 نقطة، بفارق ثلاث نقاط فقط عن جمعية سلا التي نالت بطاقة الصعود.
+
+وفي نفس الموسم، تمكن فريق الشبان لنادي الاتحاد الرياضي الإسلامي الوجدي من الفوز ببطولة المغرب على الصعيد الوطني، متفوقًا على نادي الاتحاد البيضاوي.</p>
+      </div>
+      <figure class="history-image">
+        <img src="USMO IMG/WhatsApp Image 2025-09-03 at 11.13.24.jpeg" alt="Ba Aroub">
+        <figcaption style="text-align: center;
+        color:#4b4b4b;">أول مدرب للنادي "با عروب"رحمه الله(1927-2020)</figcaption>
+      </figure>
+    </div>
+
+    <div class="history-item reverse">
+      <div class="history-text">
+        <h3 id="para5title">العصر الذهبي</h3>
+        <p id="para5">في موسم 1974/75 نزل نادي الاتحاد الرياضي الإسلامي الوجدي إلى القسم الثالث، حيث قضى هناك ستة مواسم كاملة قبل أن يعود مجددًا إلى القسم الثاني في موسم 1980/81. ويرى معظم مشجعي النادي القدامى أن فترة الثمانينيات تُعدّ العصر الذهبي لفريق USMO.
+
+ففي موسم 1981/82 خاض النادي الملحق التاريخي من أجل الصعود إلى القسم الوطني الأول ضد فريق اتحاد تواركة، كما بلغ الفريق نصف نهائي كأس العرش سنة 1987، حيث انهزم بنتيجة 2-1 أمام جاره نهضة بركان في مباراة أقيمت بملعب مولاي عبد الله بالرباط.</p>
+      </div>
+      <figure class="history-image">
+        <img src="USMO IMG/usmo-1986.jpg" alt="USMO vs rsb">
+        <figcaption style="text-align: center;
+        color:#4b4b4b; font-size: 10px;">USMO VS RSB - THRONE CUP 1987 - Moulay Abdellah Stadium .<br>
+     الواقفون من اليمين: إبراهيم الزهواني، محمد الإدريسي، علي الصادق، مصطفى المباركي، قويدر البحري، قويدر بلهوان. <br>
+
+الجالسون من اليمين: محمد الشنوف، محمد موسعيد، سمير الرمضاني، عبد المولى بنتاهر، عزاوي إدريس.</figcaption>
+      </figure>
+    </div>
+    
+
+    <div class="history-item">
+      <div class="history-text">
+        <h3>تسعينيات القرن الماضي</h3>
+        <p>
+          تحقق حلم الجمهور الوجدي بصعود الفريق لأول مرة إلى القسم الوطني الأول في موسم 90/ 91،
+           لكنه لم يعمر طويلا بهذا القسم، وعاد في نفس الموسم من حيث أتى، ليعيش الفريق بعدها عصر الاندحار،
+            والذي كان من نتائجه سقوط الفريق إلى قسم الهواة في منتصف عقد التسعينات.
+        </p>
+      </div>
+      <figure class="history-image">
+        <img src="USMO IMG/1990 PROMOTION TEAM.jpeg" alt="1990">
+        <figcaption style="text-align: center;
+        color:#4b4b4b; font-size: 10px;">
+           مباراة الصعود للقسم الوطني الأول لأول مرة أمام هلال الناظور بمدينة العروي.
+⁠  ⁠الواقفون من اليمين   :
+العابد رحمه الله - المباركي - بقال - گوار - الزهواني - السميري
+  ⁠الجالسون من اليمين  : <br>
+مالا - أبخار - الصوفي - إدريس - عبد المولى
+  ⁠مدرب الفريق سي محمد التيجيني رحمه الله ورئيس الفريق آنذاك المرحوم جمال الدين
+        </figcaption>
+      </figure>
+    </div>
+
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="USMO IMG/cropped_circle_image.png" alt="USMO Logo">
+  </div>
+
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/USMOUJDAFOOT" target="_blank">
+      <img src="USMO IMG/facebook-round-svgrepo-com.svg" alt="Facebook">
+    </a>
+    <a href="https://www.youtube.com/@usmotv48" target="_blank">
+      <img src="USMO IMG/youtube-svgrepo-com.svg" alt="Youtube">
+    </a>
+    <a href="https://www.instagram.com/usmoujda/" target="_blank">
+      <img src="USMO IMG/instagram-icon-svgrepo-com (2).svg" alt="Instagram">
+    </a>
+  </div>
+
+  <div class="footer-name">
+    <p>UNION SPORTIVE MUSULMANE OUJDA</p>
+  </div>
+    
+</footer>
+
+  <script>
+    function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+    document.getElementById('langMenu').classList.toggle('show');
+    document.getElementById('hamburger').classList.toggle('active');
+  }
+ 
+</script>
+</body>
+
+</html>

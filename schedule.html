@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts link (add in head) -->
+ <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="USMO IMG/cropped_circle_image.png">
+   <title>USMO Schedule</title>
+  <link rel="stylesheet" href="schedule.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">USMO</a></div>
+
+  <!-- Hamburger (3 lines) -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Centered nav -->
+  <nav id="navMenu">
+    <a id="team" href="team.html">الفريق</a>
+    <a id="history" href="history.html">التاريخ</a>
+    <a id="standing" href="standing.html">الترتيب</a>
+    <a id="schedule" href="schedule.html">الجدول</a>
+  </nav>
+<div class="language-selector" id="langMenu">
+    <label for="lang"></label>
+    <select class="selector" id="lang" >
+      <option value="ar">العربية</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+  
+
+</header>
+  <main>
+<!-- Modern Matches Schedule Table -->
+<div class="schedule-container">
+  <h2 class="table-title">جدول البطولة الاحترافية 2 25/26 
+</h2>
+  <table class="schedule-table">
+    <thead>
+      <tr>
+        <th class="center-cell">الجولة</th>
+        <th class="center-cell">التاريخ</th>
+        <th class="center-cell">الخصم</th>
+        <th class="center-cell">الملعب</th>
+        <th class="center-cell">النتيجة</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="played">
+        <td class="center-cell">1</td>
+        <td class="center-cell">26 / 09 / 2025</td>
+        <td class="center-cell">JSM</td>
+        <td class="center-cell"><img class="away-stadium" src="USMO IMG/plane-svgrepo-com.svg" alt="away"></td>
+        <td class="center-cell">--</td>
+      </tr>
+      <tr class="upcoming">
+        <td class="center-cell">2</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">SCCM</td>
+        <td class="center-cell"><img class="home-stadium" src="USMO IMG/home-svgrepo-com.svg" alt="home"></td>
+        <td class="center-cell">—-</td>
+      </tr>
+      <tr class="upcoming">
+        <td class="center-cell">3</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">RBM</td>
+        <td class="center-cell"><img class="away-stadium" src="USMO IMG/plane-svgrepo-com.svg" alt="away"></td>
+        <td class="center-cell">--</td>
+      </tr>
+       <tr class="upcoming">
+        <td class="center-cell">4</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">KAC</td>
+        <td class="center-cell"><img class="home-stadium" src="USMO IMG/home-svgrepo-com.svg" alt="home"></td>
+        <td class="center-cell">--</td>
+      </tr>
+       <tr class="upcoming">
+        <td class="center-cell">5</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">USAT</td>
+        <td class="center-cell"><img class="away-stadium" src="USMO IMG/plane-svgrepo-com.svg" alt="away"></td>
+        <td class="center-cell">--</td>
+      </tr>
+       <tr class="upcoming">
+        <td class="center-cell">6</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">CJBG</td>
+        <td class="center-cell"><img class="away-stadium" src="USMO IMG/plane-svgrepo-com.svg" alt="away"></td>
+        <td class="center-cell">--</td>
+      </tr>
+       <tr class="upcoming">
+        <td class="center-cell">7</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">SM</td>
+        <td class="center-cell"><img class="home-stadium" src="USMO IMG/home-svgrepo-com.svg" alt="home"></td>
+        <td class="center-cell">--</td>
+      </tr>
+       <tr class="upcoming">
+        <td class="center-cell">8</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">WAF</td>
+        <td class="center-cell"><img class="away-stadium" src="USMO IMG/plane-svgrepo-com.svg" alt="away"></td>
+        <td class="center-cell">--</td>
+      </tr>
+       <tr class="upcoming">
+        <td class="center-cell">9</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">MAT</td>
+        <td class="center-cell"><img class="home-stadium" src="USMO IMG/home-svgrepo-com.svg" alt="home"></td>
+        <td class="center-cell">--</td>
+      </tr>
+      <tr class="upcoming">
+        <td class="center-cell">10</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">RAC</td>
+        <td class="center-cell"><img class="away-stadium" src="USMO IMG/plane-svgrepo-com.svg" alt="away"></td>
+        <td class="center-cell">--</td>
+      </tr>
+      <tr class="upcoming">
+        <td class="center-cell">11</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">MCO</td>
+        <td class="center-cell"><img class="home-stadium" src="USMO IMG/home-svgrepo-com.svg" alt="home"></td>
+        <td class="center-cell">--</td>
+      </tr>
+      <tr class="upcoming">
+        <td class="center-cell">12</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">USB</td>
+        <td class="center-cell"><img class="away-stadium" src="USMO IMG/plane-svgrepo-com.svg" alt="away"></td>
+        <td class="center-cell">--</td>
+      </tr>
+      <tr class="upcoming">
+        <td class="center-cell">13</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">JSS</td>
+        <td class="center-cell"><img class="home-stadium" src="USMO IMG/home-svgrepo-com.svg" alt="home"></td>
+        <td class="center-cell">--</td>
+      </tr>
+      <tr class="upcoming">
+        <td class="center-cell">14</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">CAK</td>
+        <td class="center-cell"><img class="away-stadium" src="USMO IMG/plane-svgrepo-com.svg" alt="away"></td>
+        <td class="center-cell">--</td>
+      </tr>
+      <tr class="upcoming">
+        <td class="center-cell">15</td>
+        <td class="center-cell">--</td>
+        <td class="center-cell">WST</td>
+        <td class="center-cell"><img class="home-stadium" src="USMO IMG/home-svgrepo-com.svg" alt="home"></td>
+        <td class="center-cell">--</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </main>
+  
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="USMO IMG/cropped_circle_image.png" alt="USMO Logo">
+  </div>
+
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/USMOUJDAFOOT" target="_blank">
+      <img src="USMO IMG/facebook-round-svgrepo-com.svg" alt="Facebook">
+    </a>
+    <a href="https://www.youtube.com/@usmotv48" target="_blank">
+      <img src="USMO IMG/youtube-svgrepo-com.svg" alt="Youtube">
+    </a>
+    <a href="https://www.instagram.com/usmoujda/" target="_blank">
+      <img src="USMO IMG/instagram-icon-svgrepo-com (2).svg" alt="Instagram">
+    </a>
+  </div>
+
+  <div class="footer-name">
+    <p>UNION SPORTIVE MUSULMANE OUJDA</p>
+  </div>
+    
+</footer>
+
+  <script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+    document.getElementById('langMenu').classList.toggle('show');
+    document.getElementById('hamburger').classList.toggle('active');
+  }
+</script>
+</body>
+</html>
+
+
+

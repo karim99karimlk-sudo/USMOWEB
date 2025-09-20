@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="tab">الموقع الرسمي لنادي الإتحاد الرياضي الإسلامي الوجدي</title>
+<link rel="icon" href="USMO IMG/cropped_circle_image.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="header.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">USMO</a></div>
+
+  <!-- Hamburger (3 lines) -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Centered nav -->
+  <nav id="navMenu">
+    <a id="team" href="team.html">الفريق</a>
+    <a id="history" href="history.html">التاريخ</a>
+    <a id="standing" href="standing.html">الترتيب</a>
+    <a id="schedule" href="schedule.html">الجدول</a>
+  </nav>
+<div class="language-selector" id="langMenu">
+    <label for="lang"></label>
+    <select class="selector" id="lang" onchange="changeLang(this.value)">
+      <option value="en">العربية</option>
+      <option value="ar">English</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+  
+
+</header>
+<div class="img-container" style="margin-bottom: 40px;">
+          <img class="tm-img" src="USMO IMG/171058965_219484089977877_3701384473105137772_n copy.jpeg" alt="">
+          <div id="title1" class="title">الإتحاد الرياضي الإسلامي الوجدي</div>
+          <div id="title2" class="title2">الموسم الرياضي 2025/2026</div>
+        </div>
+<main>
+
+ <div style="display: flex;
+ align-items: center;
+ justify-content: center;">
+ 
+ <div class="container">
+    <!-- Last Result -->
+    <div class="card">
+      <h2 id="matchInfo1">المباراة الأخيرة</h2>
+      <p id="matchInfo2">مباراة ودية</p>
+      <div class="match-info">
+        <div class="team">
+          <img src="USMO IMG/hlo-img.png" alt="HLO">
+          <p>HLO</p>
+        </div>
+        <div class="score">2-3</div>
+        <div class="team">
+          <img src="USMO IMG/cropped_circle_image.png" alt="USMO">
+          <p>USM Oujda</p>
+        </div>
+      </div>
+      <p id="matchInfo3">📍الملعب البلدي ،وجدة</p>
+    </div>
+
+    <!-- Next Match -->
+    <div class="card">
+      <h2 id="match1Info1">المباراة القادمة</h2>
+      <p id="match1Info2">البطولة الإحترافية 2، الجولة 1 - 26 سبتمبر 2025</p>
+      <div class="match-info">
+        <div class="team">
+          <img src="USMO IMG/JSM.Logo-removebg-preview.png" alt="jsm">
+          <p>JSM</p>
+        </div>
+        <div class="score">15:00</div>
+        <div class="team">
+          <img src="USMO IMG/cropped_circle_image.png" alt="usmp">
+          <p>USM Oujda</p>
+        </div>
+      </div>
+      <p id="match1Info3">📍 ملعب المسيرة، العيون</p>
+    </div>
+  </div>
+ </div>
+          <div class="more" style="margin-bottom: 40px;"><a id="fullSchedule" href="schedule.html">الجدول كامل</a></div>
+
+          <div style="display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;">
+           <div class="table-container">
+    <h2 id="standingTitle">ترتيب البطولة الاحترافية2  25/26</h2>
+          <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th id="theadTeam">فريق</th>
+          <th id="theadPlay">ج</th>
+          <th id="theadWin">ف</th>
+          <th id="theadDraw">ت</th>
+          <th id="theadLose">خ</th>
+          <th id="theadPts">نقاط</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>USMO</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>MAT</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>RAC</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+         <tr>
+          <td>4</td>
+          <td>JSM</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+          </table>
+           </div>
+          </div>
+
+           <div class="more" style="margin-bottom: 40px;"><a id="fullStanding" href="standing.html">الترتيب كامل</a></div>
+
+
+      <div style="display: flex;
+      flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;">
+
+        <h2>الفريق الأول</h2>
+
+       <div class="cards-container">
+        <div class="player-card">
+                <span class="number">3</span>
+          <img src="USMO IMG/zakaria-removebg-preview.png" alt="">
+                <span class="name">Zakaria Martil</span>
+        </div>
+
+        <div class="player-card">
+                <span class="number">/</span>
+          <img src="" alt="">
+                <span class="name">/</span>
+        </div>
+
+        <div class="player-card">
+                <span class="number">/</span>
+          <img src="/" alt="">
+                <span class="name">/</span>
+        </div>
+
+        <div class="player-card">
+                <span class="number">/</span>
+          <img src="" alt="">
+                <span class="name">/</span>
+        </div>
+       </div>
+      </div>    
+          <div class="more" style="margin-bottom: 40px;"><a id="fullteam" href="team.html">الفريق كامل</a></div>
+           
+<div class="history-container">
+  <h2 id="historyTitle" class="section-title">تاريخ النادي</h2>
+  
+  <p id="para1" class="history-text">
+   الإتحاد الرياضي الإسلامي الوجدي ، المعروف أيضًا ب"ليزمو"، هو أحد أعرق الأندية المغربية. تأسس سنة 1958 في قلب مدينة وجدة، المغرب. ألوان النادي هي الأسود والأبيض ، يُلقب الفريق بـ"لقلق الشرق" من قِبل جماهيره . يلعب الإتحاد حاليًا في دوري الدرجة الثانية المغربي للمحترفين BOTOLA PRO 2.
+  </p>
+
+  <p id="para2" class="history-text">
+    بدأت القصة عندما خطرت لثلاثة أصدقاء: عبد الرحمن بلعوشي، وبن يونس مزواري، وبومدين بتموشنت، فكرة إنشاء نادٍ بعد أن رأوا الطاقة اللامحدودة لشباب حيهم "شارع الدار البيضاء". وكان مقر النادي آنذاك في مقهى أولاد ميمون.
+
+في البداية جعلوا الحاج ميمون مومن رئيسا شرفيا بعد إقناعه، والمكي بوشعيب كشافا للمواهب، والحاج العربي بن لخضر الدرفوفي الملقب بـ"با عروب" مدربا و يعتبر أول مدرب للاتحاد.
+  </p>
+
+  <p id="para3" class="history-text"> في البداية جعلوا الحاج ميمون مومن رئيسا شرفيا بعد إقناعه، والمكي بوشعيب كشافا للمواهب، والحاج العربي بن لخضر الدرفوفي الملقب بـ"با عروب" مدربا و يعتبر أول مدرب للاتحاد.</p>
+
+             <div class="more" style="margin-bottom: 20px;"><a id="fullHistory" href="history.html">إقرأ المزيد</a></div>
+
+</div>
+
+
+
+          
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="USMO IMG/cropped_circle_image.png" alt="USMO Logo">
+  </div>
+
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/USMOUJDAFOOT" target="_blank">
+      <img src="USMO IMG/facebook-round-svgrepo-com.svg" alt="Facebook">
+    </a>
+    <a href="https://www.youtube.com/@usmotv48" target="_blank">
+      <img src="USMO IMG/youtube-svgrepo-com.svg" alt="Youtube">
+    </a>
+    <a href="https://www.instagram.com/usmoujda/" target="_blank">
+      <img src="USMO IMG/instagram-icon-svgrepo-com (2).svg" alt="Instagram">
+    </a>
+  </div>
+
+  <div class="footer-name">
+    <p>UNION SPORTIVE MUSULMANE OUJDA</p>
+  </div>
+
+
+  </div>
+
+</footer>
+
+
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+    document.getElementById('langMenu').classList.toggle('show');
+    document.getElementById('hamburger').classList.toggle('active');
+  }
+
+
+
+   
+
+</script>
+
+</body>
+</html>
