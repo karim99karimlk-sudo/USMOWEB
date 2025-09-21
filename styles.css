@@ -382,21 +382,21 @@
 /*PLAYERS CARD*/
 .cards-container{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: start;
 }
 
 .player-card {
       position: relative;
-      background:    linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 85%);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 85%);
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      width: 220px;            /* fixed card width */
-      flex: 1 1 220px;         /* responsive, min 220px */
+      width: 273px;            /* fixed card width */
+              /* responsive, min 220px */
     }
  
    
@@ -418,10 +418,10 @@
     .number {
       position: absolute;
       top: 10px;
-      left: 10px;
+      right: 10px;
       font-size: 24px;
       font-weight: bold;
-      color: #000000;
+      color: #ffffff;
     }
 
     .name {
@@ -442,6 +442,23 @@
   }
 
   
-  
+/* Taqem*/
+ .container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: start;
+  text-align: center;
+}
 
- 
+.item:nth-child(1) {
+  width: 100%;
+}
+
+.item:nth-child(2),
+.item:nth-child(3),
+.item:nth-child(4) {
+  width: 200px;
+}
