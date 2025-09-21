@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roster</title>
+  <style>
+ .players-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #111;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.player-group {
+  margin: 10px;
+  min-width: 150px;
+}
+
+.player-group h4 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.player-group p {
+  text-align: center;
+  margin: 3px 0;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.player-group p:hover {
+  color: #f1c40f; /* highlight on hover */
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  /* Row 1: Attackers + Midfielders */
+  .player-group:nth-child(1),
+  .player-group:nth-child(2) {
+    flex: 1 1 50%;
+  }
+
+  /* Row 2: Defenders + Goalkeepers */
+  .player-group:nth-child(3),
+  .player-group:nth-child(4) {
+    flex: 1 1 50%;
+  }
+}
+</style>
+</head>
+<body>
+  <footer class="players-footer">
+  <div class="player-group">
+    <h4>Attackers</h4>
+    <p>Vinícius Jr</p>
+    <p>Rodrygo</p>
+    <p>Benzema</p>
+  </div>
+  <div class="player-group">
+    <h4>Midfielders</h4>
+    <p>Modrić</p>
+    <p>Kroos</p>
+    <p>Tchouaméni</p>
+    <p>Valverde</p>
+  </div>
+  <div class="player-group">
+    <h4>Defenders</h4>
+    <p>Alaba</p>
+    <p>Militão</p>
+    <p>Rüdiger</p>
+    <p>Carvajal</p>
+    <p>Mendy</p>
+  </div>
+  <div class="player-group">
+    <h4>Goalkeepers</h4>
+    <p>Courtois</p>
+    <p>Lunin</p>
+  </div>
+</footer>
+
+</body>
+</html>
