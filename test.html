@@ -1,67 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>USMO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team News</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
   <style>
-
-.history-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 800px;
-}
-
-.history{
-  background-color: black;
-  width: 70%;
-  position: relative;
-      overflow: hidden;
-  
-}
-.history img{
-  width: 100%;
-  display: block;
-  transition: transform 0.3s;
-}
-.history img:hover{
-    transform: scale(1.1);
-
-}
-.name {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      font-family:Arial;
-      font-size: 2rem;
-      font-weight: bold;
+    body {
+      font-family: Arial, sans-serif;
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+      margin: 0;
+      padding: 0;
+      height: 3000px;
+    }
+
+    .team-news {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .team-news h2 {
+      color: black;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .swiper {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .swiper-slide {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      text-decoration: none;
+      font-style: normal;
+      color: white;
+    }
+
+    .news-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 15px;
+    }
+
+    .news-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .news-content p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .news-content small {
+      display: block;
+      margin-top: 10px;
+      color: #aaa;
+    }
+
+    /* Extra responsive tweaks */
+    @media (max-width: 600px) {
+      .news-img {
+        height: 180px;
+      }
+      .news-content h3 {
+        font-size: 1rem;
+      }
+      .news-content p {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
-<body style="background-color: rgb(240, 240, 240);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;">
+<body>
 
-  <header style="height: 100px;">
-    
-  </header>
-  <main style="width: 90%; background-color: white;">
-<div class="history-container">
-      <h2 style="color: white;">History</h2>
+  <section class="team-news">
+    <h2>Team News</h2>
 
-  <a href="history.html" class="history">
-    <img src="USMO IMG/USMO TEAM 1958.jpg" alt="">
-     <span class="name">USMO History</span>
-  </a>
-</div>
-  </main>
+    <!-- Slider -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        
+        <a href="https://www.facebook.com/photo?fbid=1339474338178137&set=a.516242933834619" class="swiper-slide">
+          <img src="https://scontent.ffez2-1.fna.fbcdn.net/v/t39.30808-6/544496557_1328494582609446_4223594048099199115_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hK_yj6r-LHcQ7kNvwESbFwj&_nc_oc=Adm0NaF8ZFvKMvAiwEiIT4Tb5ZtOR4APfAwSGinwJfy0-2DxkyeX_aCjtZMKY9_aqAM&_nc_zt=23&_nc_ht=scontent.ffez2-1.fna&_nc_gid=3c_o7d8m_HgED8Z0NinsBQ&oh=00_AfY8psaYwUHKpwpNx_htBM70OB960c9Empzdd6q3NgU2Dg&oe=68D5EA72" class="news-img" alt="Match">
+          <div  class="news-content">
+            <h3>بلاغ : بخصوص تغطية أطوار الجمع العام غير العادي.</h3>
+            <p></p>
+            <small>Posted: Sep 21, 2025</small>
+          </div>
+        </a>
 
-  <footer style="height: 100px;"></footer>
+        <div class="swiper-slide">
+          <img src="USMO IMG/USMO Black-white.logo.jpeg" class="news-img" alt="Signing">
+          <div class="news-content">
+            <h3>يجري النادي آخر الإستعدادات قبل بداية البطولة</h3>
+            <p></p>
+            <small>Posted: Sep 20, 2025</small>
+          </div>
+        </div>
+
+        <a href="https://www.facebook.com/USMOUJDAFOOT/videos/709886878733682" class="swiper-slide">
+          <img src="https://scontent.ffez2-2.fna.fbcdn.net/v/t39.30808-6/526739291_1297422045716700_9178619649712248134_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=md7SA5I_oG4Q7kNvwFATAg2&_nc_oc=Adk5PnbQQ0AjjyVkWyZG8VYdXnKSoUtNocVXe0-_CmB3FD9Oibyl0Pn-0QHu_RU6MN0&_nc_zt=23&_nc_ht=scontent.ffez2-2.fna&_nc_gid=q6lT8MyAOT-jIUhFPlf55A&oh=00_AfYC7wFOpoEd69SfnpAdd0hIrdekOkjywzR4HWEzNmKLJw&oe=68D60999" class="news-img" alt="Training">
+          <div class="news-content">
+            <h3>من تقديم اللاعبين الجدد</h3>
+            <p></p>
+            <small>Posted: Sep 18, 2025</small>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Pagination & navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      slidesPerView: 1, // always show 1 slide
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+
 </body>
 </html>

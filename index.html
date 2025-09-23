@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 <body>
 
@@ -42,16 +44,60 @@
   
 
 </header>
-<div class="img-container" style="margin-bottom: 40px;">
+<!--<div class="img-container" style="margin-bottom: 40px;">
           <img class="tm-img" src="USMO IMG/171058965_219484089977877_3701384473105137772_n copy.jpeg" alt="">
           <div id="title1" class="title">الإتحاد الرياضي الإسلامي الوجدي</div>
           <div id="title2" class="title2">الموسم الرياضي 2025/2026</div>
-        </div>
-<main>
+        </div>-->
+          <section class="team-news">
+    <h2>أخبار النادي</h2>
 
+    <!-- Slider -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        
+        <a href="https://www.facebook.com/photo?fbid=1339474338178137&set=a.516242933834619" class="swiper-slide">
+          <img src="https://scontent.ffez2-1.fna.fbcdn.net/v/t39.30808-6/544496557_1328494582609446_4223594048099199115_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hK_yj6r-LHcQ7kNvwESbFwj&_nc_oc=Adm0NaF8ZFvKMvAiwEiIT4Tb5ZtOR4APfAwSGinwJfy0-2DxkyeX_aCjtZMKY9_aqAM&_nc_zt=23&_nc_ht=scontent.ffez2-1.fna&_nc_gid=3c_o7d8m_HgED8Z0NinsBQ&oh=00_AfY8psaYwUHKpwpNx_htBM70OB960c9Empzdd6q3NgU2Dg&oe=68D5EA72" class="news-img" alt="Match">
+          <div  class="news-content">
+            <h3>بلاغ : بخصوص تغطية أطوار الجمع العام غير العادي.</h3>
+            <p></p>
+            <small>Posted: Sep 21, 2025</small>
+          </div>
+        </a>
+
+        <div class="swiper-slide">
+          <img src="USMO IMG/USMO Black-white.logo.jpeg" class="news-img" alt="Signing">
+          <div class="news-content">
+            <h3>يجري النادي آخر الإستعدادات قبل بداية البطولة</h3>
+            <p></p>
+            <small>Posted: Sep 20, 2025</small>
+          </div>
+        </div>
+
+        <a href="https://www.facebook.com/USMOUJDAFOOT/videos/709886878733682" class="swiper-slide">
+          <img src="https://scontent.ffez2-2.fna.fbcdn.net/v/t39.30808-6/526739291_1297422045716700_9178619649712248134_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=md7SA5I_oG4Q7kNvwFATAg2&_nc_oc=Adk5PnbQQ0AjjyVkWyZG8VYdXnKSoUtNocVXe0-_CmB3FD9Oibyl0Pn-0QHu_RU6MN0&_nc_zt=23&_nc_ht=scontent.ffez2-2.fna&_nc_gid=q6lT8MyAOT-jIUhFPlf55A&oh=00_AfYC7wFOpoEd69SfnpAdd0hIrdekOkjywzR4HWEzNmKLJw&oe=68D60999" class="news-img" alt="Training">
+          <div class="news-content">
+            <h3>من تقديم اللاعبين الجدد</h3>
+            <p></p>
+            <small>Posted: Sep 18, 2025</small>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Pagination & navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+<main>
+<h2 style="margin-top: 40px; margin-bottom: 0;">المباريات</h2>
  <div style="display: flex;
  align-items: center;
  justify-content: center;">
+     
+
  
  <div class="container">
     <!-- Last Result -->
@@ -293,6 +339,7 @@
 </footer>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
   function toggleMenu() {
@@ -301,7 +348,19 @@
     document.getElementById('hamburger').classList.toggle('active');
   }
 
-
+const swiper = new Swiper('.swiper', {
+      loop: true,
+      slidesPerView: 1, // always show 1 slide
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
 
    
 
