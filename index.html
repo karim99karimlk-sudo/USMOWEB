@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<header>
+<header id="header">
   <div class="logo">
     <a href="index.html">USMO</a></div>
 
@@ -49,7 +49,7 @@
           <div id="title1" class="title">الإتحاد الرياضي الإسلامي الوجدي</div>
           <div id="title2" class="title2">الموسم الرياضي 2025/2026</div>
         </div>-->
-          <section class="team-news">
+          <section style="margin-top: 80px;" class="team-news">
     <h2>أخبار النادي</h2>
 
     <!-- Slider -->
@@ -57,7 +57,7 @@
       <div class="swiper-wrapper">
         
         <a href="https://www.facebook.com/photo?fbid=1339474338178137&set=a.516242933834619" class="swiper-slide">
-          <img src="https://scontent.ffez2-1.fna.fbcdn.net/v/t39.30808-6/544496557_1328494582609446_4223594048099199115_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hK_yj6r-LHcQ7kNvwESbFwj&_nc_oc=Adm0NaF8ZFvKMvAiwEiIT4Tb5ZtOR4APfAwSGinwJfy0-2DxkyeX_aCjtZMKY9_aqAM&_nc_zt=23&_nc_ht=scontent.ffez2-1.fna&_nc_gid=3c_o7d8m_HgED8Z0NinsBQ&oh=00_AfY8psaYwUHKpwpNx_htBM70OB960c9Empzdd6q3NgU2Dg&oe=68D5EA72" class="news-img" alt="Match">
+          <img src="https://scontent.ffez2-1.fna.fbcdn.net/v/t39.30808-6/550463545_1339474384844799_5544442016380273885_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ReJJrmu31l0Q7kNvwG5-yRQ&_nc_oc=AdkLJZ_JEJMf203i4OsRJLIq9IS1IJUqwho8yLxv3Tuuqz9o5oB2Fkjn5vKhLtJ_BMk&_nc_zt=23&_nc_ht=scontent.ffez2-1.fna&_nc_gid=eXQM3qxEN1Jz3VySwfj3bg&oh=00_AfZmk7F2n-5sG8F7FLOySG3B-FGAsBd_1mtuwJEG5hV6fA&oe=68DCB4EB" class="news-img" alt="Match">
           <div  class="news-content">
             <h3>بلاغ : بخصوص تغطية أطوار الجمع العام غير العادي.</h3>
             <p></p>
@@ -360,6 +360,24 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       }
+    });
+
+
+    let lastScroll = 0;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll) {
+        // scrolling down → hide
+        header.classList.add("hide");
+      } else {
+        // scrolling up → show
+        header.classList.remove("hide");
+      }
+
+      lastScroll = currentScroll;
     });
 
    

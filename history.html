@@ -101,7 +101,7 @@
 </head>
 <body>
 
-<header>
+<header id="header">
   <div class="logo">
     <a href="index.html">USMO</a></div>
 
@@ -132,7 +132,7 @@
 </header>
 <main>
 
-  <div class="history-container">
+  <div style="margin-top: 80px;" class="history-container">
     <h2 id="historyTitle" class="section-title"> تاريخ النادي</h2>
 
 
@@ -301,6 +301,23 @@
     document.getElementById('langMenu').classList.toggle('show');
     document.getElementById('hamburger').classList.toggle('active');
   }
+
+  let lastScroll = 0;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll) {
+        // scrolling down → hide
+        header.classList.add("hide");
+      } else {
+        // scrolling up → show
+        header.classList.remove("hide");
+      }
+
+      lastScroll = currentScroll;
+    });
  
 </script>
 </body>

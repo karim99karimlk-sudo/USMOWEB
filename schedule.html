@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<header>
+<header id="header">
   <div class="logo">
     <a href="index.html">USMO</a></div>
 
@@ -47,7 +47,7 @@
 </header>
   <main>
 <!-- Modern Matches Schedule Table -->
-<div class="schedule-container">
+<div style="margin-top: 70px;" class="schedule-container">
   <h2 class="table-title">جدول البطولة الاحترافية 2 25/26 
 </h2>
   <table class="schedule-table">
@@ -250,6 +250,23 @@
     document.getElementById('langMenu').classList.toggle('show');
     document.getElementById('hamburger').classList.toggle('active');
   }
+
+  let lastScroll = 0;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll) {
+        // scrolling down → hide
+        header.classList.add("hide");
+      } else {
+        // scrolling up → show
+        header.classList.remove("hide");
+      }
+
+      lastScroll = currentScroll;
+    });
 </script>
 </body>
 </html>
