@@ -46,7 +46,7 @@
 
 /* Alternating row colors */
 .schedule-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #eeeeee;
 }
 
 .schedule-table tbody tr:nth-child(odd) {
