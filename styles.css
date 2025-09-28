@@ -1,6 +1,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Readex Pro', sans-serif;
         transition: all 0.3s ease;
+        background-color: #fff;
  }
 
   @media(min-width:1440px){
@@ -91,6 +92,80 @@
   }
 
 }
+
+ /*NEWS CSS */
+    .news-slider {
+      position: relative;
+      width: 100%;
+      height: 800px;
+      overflow: hidden;
+    }
+
+    .news-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .news-slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .news-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .news-title {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 15px 20px 30px; /* extra bottom space for timer */
+      font-size: 30px;
+      text-align: center;
+    }
+
+    /* Progress bar */
+    .progress-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 5px;
+      width: 0%;
+      background: rgb(255, 255, 255);
+      transition: width linear;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .news-slider {
+        height: 520px;
+      }
+      .news-title {
+        font-size: 16px;
+        padding: 10px 15px 25px;
+      }
+    } 
+
+    @media (max-width: 480px) {
+      .news-slider {
+        height: 560px;
+      }
+      .news-title {
+        font-size: 14px;
+        padding: 8px 12px 20px;
+      }
+    }
+     /*NEWS CSS UP */
+
 /*News*/
      .team-news {
       width: 100%;
@@ -160,70 +235,135 @@
       }
     }
 
-.container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      max-width: 1200px;  /* controls width on PC */
-      width: 100%;
-      padding: 20px;
-    }
-
-    .card {
-      flex: 1;
-      max-width: 600px; /* keeps cards from getting too big */
-      background: linear-gradient(135deg, #6c6c6c, #000000);
-      color: white;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
+    /*MATCHES CSS*/
+  .carousel {
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scroll-behavior:smooth;
+    padding:12px;
+    user-select:none;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+    touch-action: pan-y;
     
+  }
+  .carousel::-webkit-scrollbar{ display:none }
 
-    .card h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      font-weight: bold;
+  .matchCard {
+    flex:0 0 calc(33.333% - 10.666px);
+    scroll-snap-align:start;
+    background:#fff;
+    border-radius:10px;
+    height: 300px;
+    padding:18px;
+    box-shadow:0 6px 18px rgba(10,20,30,.06);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+  .allMatchesHeader{
+    color: rgb(0, 0, 0);
+      padding-top:50px;
+      padding-right: 100px;
+      text-align: right;
+  }
+  .allMatches{
+    font-size: 1rem;
+    padding-right: 30px;
+    font-weight: normal;
+    font-family: 'Tajawal';
+  }
+  .allMatches a:hover{
+    border-bottom: 1px solid black;
+  }
+  .allMatches a{
+     color: inherit;
+      font-style: none;
+       text-decoration: none;
+       padding-bottom: 4px;
+  }
+
+  .matchTeams {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    margin-bottom: 40px;
+    
+  }
+  .matchteam {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .matchteam img {
+    width:100px; height:100px;
+    object-fit:contain;
+    margin-bottom:6px;
+  }
+  .score {
+    font-size:1.4rem;
+    font-weight:700;
+    
+  }
+  .info {
+    font-size:0.9rem;
+    color:#555;
+  }
+
+  .tournament{
+    font-family: 'Readex Pro';
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 900px){
+    .matchCard { flex:0 0 calc(50% - 8px) }
+     .allMatchesHeader{
+      text-align: right;
+      padding-right: 80px;
+
     }
+     .score {
+    font-size:1.4rem;
+    font-weight:700;
+    
+  }
+  }
+  @media (max-width: 600px){
+    .matchCard { flex:0 0 calc(100% - 16px) }
+    .allMatchesHeader{
+      text-align: right;
+      padding-right: 20px;
 
-    .match-info {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 15px;
     }
-
-    .team {
-      text-align: center;
-      flex: 1;
-    }
-
-    .team img {
-      width: 70px;
-      margin-bottom: 8px;
-    }
-
     .score {
-      font-size: 2rem;
-      font-weight: bold;
-      margin: 0 15px;
-    }
+    font-size:1.4rem;
+    font-weight:700;
+    
+  }
+  }
+  @media (max-width: 480px){
+    .matchCard { flex:0 0 calc(100% - 16px) }
+    .allMatchesHeader{
+      text-align: right;
+      padding-right: 20px;
 
-    /* Responsive for phones */
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .card {
-        width: 100%;
-        max-width: 500px;
-      }
     }
+      .score {
+    font-size:1.4rem;
+    font-weight:700;
+    
+  }
+  }
+  /*MATCHES CSS*/
 
 
     .more{
@@ -247,12 +387,12 @@
 }
 
 
-/*standing-table*/
+/*standing-table
 
     .table-container {
-      max-width: 800px;   /* keeps table from being too wide */
+      max-width: 800px;    keeps table from being too wide 
       width: 100%;
-          /* space left & right */
+           space left & right 
     }
 
     h2 {
@@ -283,9 +423,47 @@
     tr:last-child td {
       border-bottom: none;
     }
-
+*/
    
+.standingDiv{
+    position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin-bottom: 30px;
+   }
+   .standingImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    transition: transform 0.3s;
 
+   }
+   .standingImg:hover{
+    transform: scale(1.1);
+   }
+  .standingDiv h2{
+    position: absolute;
+    color: white;
+    z-index: 2;
+      font-size: 40px;
+      bottom: 30px;
+      right: 100px;
+      border-bottom: 2px solid white;
+      padding-bottom: 6px;
+   }
+   @media screen and (max-width:600px) {
+    .standingDiv{
+      height: 400px;
+    }
+    .standingDiv h2{
+      font-size: 30px;
+      bottom: 20px;
+      right: 40px;
+    }
+   }
 
 
 /* Container HISTORY */
@@ -345,6 +523,7 @@
   justify-content: center;
   align-items: center;
   align-content: start;
+  margin-top: 20px;
 }
 
 .player-card {

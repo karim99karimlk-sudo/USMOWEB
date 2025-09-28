@@ -1,13 +1,13 @@
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Helvetica, sans-serif;
       background: #f8f8f8;
       
       
     }
 
     .table-container {
-      max-width: 800px;   /* keeps table from being too wide */
+      max-width: 1200px;   /* keeps table from being too wide */
       width: 100%;
           /* space left & right */
     }
@@ -23,7 +23,7 @@
       border-collapse: collapse;
       background: white;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      border-radius: 4px;
       overflow: hidden;
       
     }
@@ -33,11 +33,29 @@
       background: linear-gradient(135deg, #6c6c6c, #000000);
       color: white;
     }
+    #theadPts{
+      width: 120px;
+    }
+    .data,
+    .dataA{
+      width: 80px;
+    }
+    #theadTeam,
+    .usmo-td,
+    .team{
+      text-align: right;
+    }
+    tbody{
+      font-size: 1.2rem;
+      font-family: Helvetica
+    }
+
 
     th, td {
-      padding: 12px;
+      padding: 12px 0;
       text-align: center;
       border-bottom: 1px solid #ddd;
+      
     }
 
     
@@ -49,9 +67,37 @@
     
 
     .usmo-tr{
-      background-color: #d2d2d2;
+      background-color: #e7e7e7;
+    }
+    .usmo-td,
+    .td-pts{
       font-weight: bold;
     }
-    
+    @media screen and (max-width:600px) {
+     thead{ font-size: 1rem; font-family: 'Tajawal';}
+     tbody{
+      font-size: 1rem;
+      font-family: 'Tajawal';
+      font-weight: bold;
+     }
+     .td-pts{font-weight:bolder ;}
+     #theadLose,
+     #theadWin,
+     #theadDraw,
+     .data{
+      display: none;
+     }
+     #theadPts{
+      width: 80px;
+    }
+     .dataA{
+       width: 60px;
+    }
+    h2 {
+      
+      margin: 20px 0;
+      font-size:1.2rem ;
+    }
+    }
     
     
