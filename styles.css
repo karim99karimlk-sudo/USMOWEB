@@ -97,7 +97,7 @@
     .news-slider {
       position: relative;
       width: 100%;
-      height: 800px;
+      height: 730px;
       overflow: hidden;
     }
 
@@ -255,6 +255,7 @@
   .matchCard {
     flex:0 0 calc(33.333% - 10.666px);
     scroll-snap-align:start;
+        scroll-snap-type:x mandatory;     /* enable snapping */
     background:#fff;
     border-radius:10px;
     height: 300px;
