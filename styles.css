@@ -240,7 +240,6 @@
     display:flex;
     gap:16px;
     overflow-x:auto;
-    scroll-snap-type:x mandatory;
     -webkit-overflow-scrolling:touch;
     scroll-behavior:smooth;
     padding:12px;
@@ -255,7 +254,6 @@
   .matchCard {
     flex:0 0 calc(33.333% - 10.666px);
     scroll-snap-align:start;
-        scroll-snap-type:x mandatory;     /* enable snapping */
     background:#fff;
     border-radius:10px;
     height: 300px;
